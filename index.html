@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fruit burst</title>
+
     <!-- custom css style -->
     <style>
       * {
@@ -15,6 +16,7 @@
         font-family: "Lato", sans-serif;
       }
     </style>
+
     <!-- lato google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,27 +24,33 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
+
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
+  
   <body class=".font-lato">
-    <header class="container mx-auto mt-12 mb-12">
+    <header class="container mx-auto mt-12 mb-12 lg:mb-28 relative">
       <div
         class="flex flex-col lg:flex-row justify-between items-center mb-12 bg-[#F85559] rounded-[30rem] py-4 px-8"
       >
+
         <!-- navbar section structure and styles-->
+
         <nav class="text-lg text-[#FFF] font-medium">
           <ul class="flex gap-3 justify-around items-center">
             <li><a href="#">Home</a></li>
@@ -86,7 +94,9 @@
           </button>
         </div>
       </div>
+
       <!-- banner section structure and styles -->
+
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <div
@@ -193,10 +203,43 @@
           </div>
         </div>
       </div>
+
+      <!-- overlapping section structure and styles -->
+
+      <div
+        class="hidden lg:block absolute z-10 -mt-24 ml-32 xl:ml-64 2xl:ml-96"
+      >
+        <div
+          class="max-w-fit bg-[#FFF] p-2 flex gap-3 shadow border-2 border-solid rounded-lg"
+        >
+          <div class="text-center">
+            <img src="images/fruit1.png" alt="" />
+            <h3 class="text-lg text-[#121212cc] font-medium">Grapes</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit2.png" alt="" />
+            <h3 class="text-lg text-[#121212cc] font-medium">Orange</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit3.png" alt="" />
+            <h3 class="text-lg text-[#121212cc] font-medium">Mango</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit4.png" alt="" />
+            <h3 class="text-lg text-[#121212cc] font-medium">Strawberry</h3>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit5.png" alt="" />
+            <h3 class="text-lg text-[#121212cc] font-medium">Pomegranate</h3>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="container mx-auto mb-12">
+
       <!-- deal section structure and styles-->
+
       <section class="mb-12">
         <div
           class="flex flex-col gap-5 lg:flex-row justify-between items-center mb-12"
